@@ -260,7 +260,7 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/datafactory/blobs/data",
+					"blobPathBeginsWith": "/datafactory/blobs/",
 					"blobPathEndsWith": "user.csv",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('uploadFile_properties_typeProperties_scope')]",
