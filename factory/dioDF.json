@@ -2,7 +2,7 @@
 	"name": "dioDF",
 	"properties": {
 		"globalConfigurations": {
-			"PolicyValidationEnabled": "true"
+			"PolicyValidationEnabled": "false"
 		}
 	},
 	"location": "francecentral"
