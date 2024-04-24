@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'DFSQLDatabase'"
 		},
+		"uploadFile_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/549a47f8-014a-4ac9-a7e9-e32025993f10/resourceGroups/DataFactoryClass/providers/Microsoft.Storage/storageAccounts/diosa"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +51,9 @@
 					},
 					"DFSQLDatabase_connectionString": {
 						"value": "[parameters('DFSQLDatabase_connectionString')]"
+					},
+					"uploadFile_properties_typeProperties_scope": {
+						"value": "[parameters('uploadFile_properties_typeProperties_scope')]"
 					}
 				}
 			},

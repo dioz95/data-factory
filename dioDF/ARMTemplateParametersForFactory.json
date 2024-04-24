@@ -10,6 +10,9 @@
 		},
 		"DFSQLDatabase_connectionString": {
 			"value": ""
+		},
+		"uploadFile_properties_typeProperties_scope": {
+			"value": "/subscriptions/549a47f8-014a-4ac9-a7e9-e32025993f10/resourceGroups/DataFactoryClass/providers/Microsoft.Storage/storageAccounts/diosa"
 		}
 	}
 }
