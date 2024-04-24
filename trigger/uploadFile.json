@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Each time a file is uploaded in my container, we launch the pipeline",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -14,7 +14,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/datafactory/blobs/data",
+			"blobPathBeginsWith": "/datafactory/blobs/",
 			"blobPathEndsWith": "user.csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/549a47f8-014a-4ac9-a7e9-e32025993f10/resourceGroups/DataFactoryClass/providers/Microsoft.Storage/storageAccounts/diosa",
