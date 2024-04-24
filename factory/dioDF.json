@@ -1,0 +1,9 @@
+{
+	"name": "dioDF",
+	"properties": {
+		"globalConfigurations": {
+			"PolicyValidationEnabled": "true"
+		}
+	},
+	"location": "francecentral"
+}
