@@ -236,6 +236,38 @@
 				"[concat(variables('factoryId'), '/datasets/EmpCsv')]",
 				"[concat(variables('factoryId'), '/datasets/EmpTable')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Minutely')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Run my pipeline every minute",
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "CopyCSV2SQL",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2024-04-24T14:00:00",
+						"endTime": "2024-04-24T14:02:00",
+						"timeZone": "Romance Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/CopyCSV2SQL')]"
+			]
 		}
 	]
 }
