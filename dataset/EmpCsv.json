@@ -1,0 +1,37 @@
+{
+	"name": "EmpCsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DFBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "user.csv",
+				"folderPath": "data",
+				"container": "datafactory"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "John",
+				"type": "String"
+			},
+			{
+				"name": "Doe",
+				"type": "String"
+			},
+			{
+				"name": "USA",
+				"type": "String"
+			}
+		]
+	}
+}
